@@ -72,7 +72,7 @@ public class SonarQubeSqlInjection {
     }
 
     /**
-     * SonarQube will NOT detected vulnerability in this method.
+     * SonarQube will NOT detect vulnerability in this method.
      *
      * @param username
      * @param password
