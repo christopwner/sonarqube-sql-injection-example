@@ -1,0 +1,8 @@
+#netbeans and java
+build/
+nbproject/private
+
+#derby db
+derby.log
+derby.properties
+sonar/
