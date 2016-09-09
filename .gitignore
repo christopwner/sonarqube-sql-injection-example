@@ -6,3 +6,6 @@ nbproject/private
 derby.log
 derby.properties
 sonar/
+
+#sonarqube
+.sonar/

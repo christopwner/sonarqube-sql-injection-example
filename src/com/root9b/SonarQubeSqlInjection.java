@@ -9,8 +9,8 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 
 /**
- * Demonstration of SonarQube only detecting in-line string concatenation for
- * executing queries.
+ * Demonstration of SonarQube only detecting vulnerability of in-line string
+ * concatenation for executing queries.
  *
  * @author Christopher Towner
  */
@@ -53,7 +53,7 @@ public class SonarQubeSqlInjection {
     }
 
     /**
-     * SonarQube will detect the concatenation in this method.
+     * SonarQube will detect the vulnerability in this method.
      *
      * @param username
      * @param password
@@ -72,9 +72,10 @@ public class SonarQubeSqlInjection {
     }
 
     /**
-     * SonarQube will NOT detected concatenation in this method.
+     * SonarQube will NOT detected vulnerability in this method.
+     *
      * @param username
-     * @param password 
+     * @param password
      */
     private static void undetectedVulnerability(String username, String password) {
         String sql = "SELECT * FROM db_user WHERE username = '" + username + "' AND PASSWORD = '" + password + "'";
